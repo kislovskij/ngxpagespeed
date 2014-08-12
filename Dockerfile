@@ -11,7 +11,7 @@ RUN apt-get install -yqq build-essential zlib1g-dev libpcre3 libpcre3-dev openss
 
 # Download ngx_pagespeed
 RUN cd /tmp && wget -q -O - https://github.com/pagespeed/ngx_pagespeed/archive/v1.8.31.4-beta.tar.gz | tar zxf -
-RUN cd /tmp/ngx_pagespeed-1.8.31.3-beta/ && wget -q -O - https://dl.google.com/dl/page-speed/psol/1.8.31.4.tar.gz | tar zxf -
+RUN cd /tmp/ngx_pagespeed-1.8.31.4-beta/ && wget -q -O - https://dl.google.com/dl/page-speed/psol/1.8.31.4.tar.gz | tar zxf -
 
 # Download and build nginx
 RUN cd /tmp && wget -q -O - http://nginx.org/download/nginx-1.7.4.tar.gz | tar zxf -
